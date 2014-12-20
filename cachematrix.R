@@ -43,7 +43,7 @@ cacheSolve <- function(x, ...) {
         }
         ## if we got here, then have not previously cached
         data <- x$get()
-        ## so use soure to get the inverse
+        ## so use solve to get the inverse
         inv <- solve(data, ...)
         ## cache it
         x$setinverse(inv)
